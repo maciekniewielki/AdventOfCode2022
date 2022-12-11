@@ -32,6 +32,8 @@ def input_as_chunks(filename):
             if curr_chunk:
                 chunks.append(curr_chunk)
             curr_chunk = []
+    # append last chunk
+    chunks.append(curr_chunk)
     return chunks
 
 def input_as_chunked_ints(filename):
